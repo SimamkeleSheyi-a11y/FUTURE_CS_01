@@ -39,9 +39,10 @@ A vulnerability assessment was conducted on scanme.nmap.org using Nmap. The scan
 ---
 
 ## Tools Used
-- Nmap 7.99
-- Canva (report design)
 
+**Website tested:** scanme.nmap.org
+**Scope:** Read-only, public-facing pages only. No exploitation or brute force.
+**Tools used:** Nmap 7.99, Command Prompt, Canva
 ---
 
 ## Screenshot
