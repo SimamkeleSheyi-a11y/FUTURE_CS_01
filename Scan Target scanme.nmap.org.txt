@@ -1,0 +1,29 @@
+Scan Target: scanme.nmap.org
+
+Open Ports and Analysis:
+
+1. Port 22 (SSH) - OPEN
+   Service: OpenSSH 6.6.1p1
+   Risk Level: Medium
+   Description: SSH allows remote access to the server. If not properly secured, attackers can attempt brute-force login attacks.
+
+2. Port 80 (HTTP) - OPEN
+   Service: Apache httpd 2.4.7
+   Risk Level: Medium
+   Description: HTTP traffic is not encrypted, making it vulnerable to interception and attacks such as Man-in-the-Middle (MITM).
+
+3. Port 2000, 5060, 31337 - OPEN (tcpwrapped)
+   Risk Level: Low
+   Description: These ports are protected or filtered but may still indicate running services that require monitoring.
+
+4. Port 9929 - OPEN
+   Service: nping-echo
+   Risk Level: Low
+   Description: Used for network testing. Could be misused for probing activities.
+
+Recommendations:
+
+- Use strong passwords and disable root login for SSH
+- Implement HTTPS instead of HTTP
+- Keep server software updated
+- Monitor unusual port activity
